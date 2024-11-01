@@ -1,0 +1,149 @@
+.single-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1px; */
+    /* background-color: #e0e0e0; */
+    padding-left: 10%;
+  
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    /* padding: 10px; */
+    margin: 5px;
+}
+
+.one-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details h3 {
+    font-size: 1.8rem;
+    color: black;
+    margin: 0;
+}
+
+.details p {
+    font-size: 1.2rem;
+    color: black;
+    margin: 5px 0;
+}
+
+.details ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.details li {
+    font-size: 1.1rem;
+    color: black;
+    margin: 3px 0;
+}
+
+.main-container h4 {
+    padding-left: 10%;
+    font-weight: 500;
+    font-size: x-large;
+   
+}
+
+
+@media (max-width: 1024px) {
+    .single-page {
+        padding-left: 10%; 
+    }
+
+    .image-container {
+        padding: 15px; 
+    }
+
+    .one-image {
+        width: 250px; 
+    }
+
+    .details h3 {
+        font-size: 1.6rem; 
+    }
+
+    .main-container h4 {
+        padding-left: 30%; 
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .single-page {
+        padding-left: 0; 
+    }
+
+    .image-container {
+        flex-direction: column; 
+        align-items: center;
+        padding: 15px; 
+    }
+
+    .one-image {
+        width: 100%; 
+        max-width: 200px;
+        margin: 0 0 15px; 
+    }
+
+    .details h3 {
+        font-size: 1.6rem;
+    }
+
+    .details p, li {
+        font-size: 1rem; 
+        
+    }
+
+    .main-container h4 {
+        padding-left: 0; 
+        font-size: 1.2rem; 
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .single-page {
+        padding: 10px; 
+    }
+
+    .image-container {
+        padding: 10px; 
+    }
+
+    .one-image {
+        max-width: 150px; 
+    }
+
+    .details h3 {
+        font-size: 1.4rem; 
+    }
+
+    .details p,
+    .details li {
+        font-size: 0.9rem; 
+    }
+
+    .main-container h4 {
+        font-size: 1rem; 
+        text-align: center; 
+    }
+}
